@@ -1,4 +1,4 @@
-# 🛡️ Gagan_Kavach (ROI_Object Detection and Tracking)
+# 🛡️ ROI Detection and Tracking
 
 > **Ground-to-Air Defense Inspired Object Tracking Laser Cannon**  
 > A vision-based autonomous turret system for real-time aerial target detection and laser designation.
@@ -7,7 +7,7 @@
 
 ## 📝 Description
 
-**Gagan_Kavach** is an AI-powered defense simulation system that mimics a ground-to-air defense mechanism. Starting from black-object thresholding, the project has evolved into a full **CSRT-tracked, PID-controlled autonomous turret** capable of tracking any user-selected region of interest — not just black objects.
+This project is an AI-powered defense simulation system that mimics a ground-to-air defense mechanism. Starting from black-object thresholding, the system has evolved into a full CSRT-tracked, PID-controlled autonomous turret capable of tracking any user-selected region of interest — not just black objects.
 
 The system uses computer vision to detect and track aerial objects (drones, projectiles) and automatically aims a laser cannon at the target using servo motors controlled by an Arduino microcontroller.
 
@@ -32,7 +32,6 @@ The system uses computer vision to detect and track aerial objects (drones, proj
 
 | Component | Specification |
 |---|---|
-| Vision Host | Jetson Nano (or any Python-capable host) |
 | Microcontroller | Arduino UNO / Nano (ATmega328P) |
 | Servo Motors | MG995 / MG996R (pan & tilt axes) |
 | Camera | Webcam mounted on cannon muzzle (960×540) |
@@ -108,7 +107,7 @@ MG995 Pan & Tilt Servos ──► Laser locks onto target
 ## 📂 Repository Structure
 
 ```
-Gagan_Kavach/
+ROI_DETECTION_AND_TRACKING/
 ├── vision/
 │   ├── servo_serial.py          # Main vision + CSRT tracking script
 │   └── black_object_detect.py   # Original threshold-based detector
